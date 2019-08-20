@@ -19,77 +19,75 @@
 
 // Write your intern objects here:
 
-const internsList = [
-  {
-    id: 0,
-    email: "mmelloy0@psu.edu",
-    name: "Mitzi",
-    gender: "F"
-  },
+const intern1 = {
+  id: 0,
+  email: "mmelloy0@psu.edu",
+  name: "Mitzi",
+  gender: "F"
+};
 
-  {
-    id: 1,
-    email: "kdiben1@tinypic.com",
-    name: "Kennan",
-    gender: "M",
-    speak: function() {
-      return "Hello, my name is Kennan!";
-    }
-  },
-
-  {
-    id: 2,
-    email: "kmummery2@wikimedia",
-    name: "Keven",
-    gender: "M"
-  },
-
-  {
-    id: 3,
-    email: "gmartinson3@illinois.edu",
-    name: "Gannie",
-    gender: "M"
-  },
-
-  {
-    id: 4,
-    email: "adaine5@samsung.com",
-    name: "Antonietta",
-    gender: "F",
-    multiplyNums: function(num1, num2) {
-      return num1 * num2;
-    }
+const intern2 = {
+  id: 1,
+  email: "kdiben1@tinypic.com",
+  name: "Kennan",
+  gender: "M",
+  speak: function() {
+    return "Hello, my name is Kennan!";
   }
-];
+};
+
+const intern3 = {
+  id: 2,
+  email: "kmummery2@wikimedia",
+  name: "Keven",
+  gender: "M"
+};
+
+const intern4 = {
+  id: 3,
+  email: "gmartinson3@illinois.edu",
+  name: "Gannie",
+  gender: "M"
+};
+
+const intern5 = {
+  id: 4,
+  email: "adaine5@samsung.com",
+  name: "Antonietta",
+  gender: "F",
+  multiplyNums: function(num1, num2) {
+    return num1 * num2;
+  }
+};
 
 // ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(internsList[0]["name"]);
+console.log(intern1.name);
 
 // Kennan's ID
-console.log(internsList[1]["id"]);
+console.log(intern2.id);
 
 // Keven's email
-console.log(internsList[2]["email"]);
+console.log(intern3.email);
 
 // Gannie's name
-console.log(internsList[3]["name"]);
+console.log(intern4.name);
 
 // Antonietta's Gender
-console.log(internsList[4]["gender"]);
+console.log(intern5.gender);
 
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-console.log(internsList[1].speak());
+console.log(intern2.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-console.log(internsList[4].multiplyNums(2, 4));
+console.log(intern5.multiplyNums(2, 4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
